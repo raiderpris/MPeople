@@ -5,7 +5,7 @@ import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
-import { LoginComponent } from '../login/login.component';
+import { LoginComponent } from './login/login.component';
 
 import { Logger } from 'angular2-logger/core';
 
@@ -18,11 +18,11 @@ import { Logger } from 'angular2-logger/core';
     BrowserModule,
     FormsModule,
     HttpModule,
-    /*RouterModule.forRoot([
+    RouterModule.forRoot([
        { path: '', redirectTo: 'app-login', pathMatch: 'full' },
        { path: 'app-login', component: LoginComponent },
        { path: '**', redirectTo: 'app-login' }
-      ])*/
+      ])
   ],
   providers: [
       Logger
