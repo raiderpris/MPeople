@@ -7,26 +7,21 @@
                 <span class='icon-bar'></span>
                 <span class='icon-bar'></span>
             </button>
-            <a class='navbar-brand' [routerLink]="['/home']">M#People</a>
+            <a class='navbar-brand'>M#People</a>
         </div>
         <div class='clearfix'></div>
         <div class='navbar-collapse collapse'>
             <ul class='nav navbar-nav'>
-                <li [routerLinkActive]="['link-active']">
-                    <a [routerLink]="['/home']">
+                <li>
+                    <a>
                         <span class='glyphicon glyphicon-home'></span> Tableau de bord
                     </a>
                 </li>
-                <li [routerLinkActive]="['link-active']">
-                    <a [routerLink]="['/counter']">
+                <li>
+                    <a>
                         <span class='glyphicon glyphicon-search'></span> Rechercher un collaborateur
                     </a>
                 </li>
-                <!--<li [routerLinkActive]="['link-active']">
-                    <a [routerLink]="['/fetch-data']">
-                        <span class='glyphicon glyphicon-th-list'></span> Fetch data
-                    </a>
-                </li>-->
             </ul>
         </div>
     </div>

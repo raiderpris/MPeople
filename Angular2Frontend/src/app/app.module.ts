@@ -2,10 +2,14 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
-import { RouterModule } from '@angular/router';
+
+import { AppRouter } from './app.router';
 
 import { AppComponent } from './app.component';
-import { LoginComponent } from './login/login.component';
+import { LoginComponent } from './account/login/login.component';
+import { AccountCreationComponent } from './account/accountCreation/accountCreation.component';
+import { MainComponent } from './main/main.component';
+import { NavMenuComponent } from './main/navmenu/navmenu.component';
 
 import { Logger } from 'angular2-logger/core';
 
@@ -13,16 +17,15 @@ import { Logger } from 'angular2-logger/core';
   declarations: [
       AppComponent,
       LoginComponent,
+      AccountCreationComponent,
+      MainComponent,
+      NavMenuComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    RouterModule.forRoot([
-       { path: '', redirectTo: 'app-login', pathMatch: 'full' },
-       { path: 'app-login', component: LoginComponent },
-       { path: '**', redirectTo: 'app-login' }
-      ])
+    AppRouter
   ],
   providers: [
       Logger

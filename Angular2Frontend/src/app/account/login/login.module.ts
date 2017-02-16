@@ -2,20 +2,21 @@
 import { NgModule } from '@angular/core';
 
 /*Déclaration des composants*/
-import { MainComponent } from './main.component';
+import { LoginComponent } from './login.component';
 
 @NgModule({
-
-    imports: [],
-    declarations: [
-        MainComponent,
+    imports: [
     ],
+    declarations: [
+        LoginComponent
+    ],
+    bootstrap: [],
     providers: [],
     exports: [
-        MainComponent,
+        LoginComponent
     ]
 })
 
-export class MainModule {
+export class LoginModule {
 
 }
